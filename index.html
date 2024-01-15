@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300&family=Space+Grotesk:wght@500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Lobster', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- CARAUSEL -->
+    <div class="container-fuild">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <a href="https://rog.asus.com/event/ces/" class="carousel-item active" data-bs-interval="3500">
+                    <img src="https://dlcdnwebimgs.asus.com/gain/A0C0D3F8-7DD0-40A5-B5B0-CFA6BE66F647/fwebp"
+                        class="d-block w-100" alt="...">
+                </a>
+                <a href="https://rog.asus.com/2024-rog-gaming-laptops/" class="carousel-item" data-bs-interval="3500">
+                    <img src="https://dlcdnwebimgs.asus.com/gain/045A87EA-7742-4E19-831D-241AD480C9AA/fwebp"
+                        class="d-block w-100" alt="...">
+                </a>
+                <a href="https://www.asus.com/microsite/Graphics-Cards/GeForce-RTX-40-Series/" class="carousel-item"
+                    data-bs-interval="3500">
+                    <img src="https://dlcdnwebimgs.asus.com/gain/49231ED7-2035-40DD-A31D-DDC8EE55B0CF/fwebp"
+                        class="d-block w-100" alt="...">
+                </a>
+                <a href="https://rog.asus.com/phones/rog-phone-8-pro/" class="carousel-item" data-bs-interval="3500">
+                    <img src="https://dlcdnwebimgs.asus.com/gain/EDFF0C3E-03BD-428D-B1CE-7B927BF91D45/fwebp"
+                        class="d-block w-100" alt="...">
+                </a>
+                <a href="https://asus.click/EHA23" class="carousel-item" data-bs-interval="3500">
+                    <img src="https://dlcdnwebimgs.asus.com/gain/90994445-7C65-4945-943E-A5717A1C1717/fwebp"
+                        class="d-block w-100" alt="...">
+                </a>
+                <a href="https://rog.asus.com/rog-slash/" class="carousel-item" data-bs-interval="3500">
+                    <img src="https://dlcdnwebimgs.asus.com/gain/B93A2EF1-9C1D-4D8F-9E39-C37E5FD9CF12/fwebp"
+                        class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- END CARAUSEL -->
+
+    <!-- PRODUCTS -->
+    <div class="container-fluid pt-5 pb-5">
+        <h2 class="fw-bold text-center">EXPLORE OUR PRODUCTS</h2>
+        <div id="carouselExample" class="carousel slide mt-5 mb-5">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100 d-flex justify-content-around">
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/868C3307-DD02-4624-8BA7-31B62EE4A38F/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/B9B3F542-45F3-4C59-9BC1-25B8A1B7CCB1/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/01480520-08BA-439E-A626-2E3D6F0D9908/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/718462E2-0FF1-424B-8070-9EE75A96DC64/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/A8895516-3C00-4DA2-97CA-04F258098672/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 d-flex justify-content-around">
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/FB3145A7-F4C6-493F-BF30-3137E3DFD470/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/21EB1E78-1240-4559-9412-FEF17430103B/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/DD0607BB-A52B-4947-81D4-6E90FFE609C1/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/976CF93D-8371-4C36-B44C-88920ED5FA9D/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/8E7A4860-965C-424A-AC63-E228E0D0B391/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 d-flex justify-content-around">
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/FE102E9F-C72D-407F-A49B-2AB1006A0669/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/F919198E-4F2B-4A8A-969A-E6E4757674AC/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/070A915A-ED63-4C9E-B837-F6F1766E2863/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/30D1F34B-0C37-4D9D-92E4-487372FD254F/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/5AC10F2B-B36C-40D7-8950-78EE7F4E298E/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 d-flex justify-content-around">
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/7A8E0C01-7EBA-49FF-977E-352D6EAAA8BC/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/85A00D94-1EFE-424F-9C02-CE0EDBB646D1/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/D8D19FB9-2485-478F-9E58-4344265E0E69/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/09D0ECE7-D85B-49F2-8432-8938293A39BB/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                        <a href="https://rog.asus.com/laptops-group/"
+                            class="text-center text-decoration-none link-dark">
+                            <img src="https://dlcdnwebimgs.asus.com/gain/D0875F0F-7F79-4C4A-8B9D-AE292AD3B675/w240/h175"
+                                alt="" width="175px">
+                            <h6 class="mt-4">Laptops</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- END PRODUCTS -->
+
+    <!-- RECENT STORIES -->
+    <div class="container-fluid bg-dark pt-5 pb-5">
+        <h2 class="fw-bold text-center mb-5 text-light">RECENT STORIES</h2>
+        <div class="container">
+            <div class="col-4 border border border-5 border-danger d-flex overflow-hidden position-relative">
+                <a href="https://rog.asus.com/articles/product-news/everything-rog-announced-at-ces-2024/">
+                    <img src="https://dlcdnrog.asus.com/rog/media/1704497743281.webp" alt="">
+                    <p class="position-absolute text-light bottom-0 m-2">TRANSCEND LIMITS WITH ALL THE GAMING GEAR ROG ANNOUNCED AT
+                        CES 2024</p>
+                </a>
+            </div>
+            <div class="col-4 border border border-5 border-danger d-flex overflow-hidden position-relative">
+                <a
+                    href="https://rog.asus.com/articles/rog-gaming-laptops/gorgeous-inside-and-out-meet-the-2024-zephyrus-g14-and-zephyrus-g16/">
+                    <img src="https://dlcdnrog.asus.com/rog/media/1704422073607.webp" alt="">
+                    <p class="position-absolute text-light">GORGEOUS INSIDE AND OUT: MEET THE 2024 ZEPHYRUS G14 AND
+                        ZEPHYRUS G16</p>
+                </a>
+            </div>
+            <div class="col-4 border border border-5 border-danger d-flex overflow-hidden position-relative">
+                <a
+                    href="https://rog.asus.com/articles/rog-gaming-laptops/gorgeous-inside-and-out-meet-the-2024-zephyrus-g14-and-zephyrus-g16/">
+                    <img src="https://dlcdnrog.asus.com/rog/media/1704440763838.webp" alt="">
+                    <p class="position-absolute text-light">THE ROG PHONE 8 AND ROG PHONE 8 PRO BEYOND GAMING WITH A
+                        SLIM NEW DESIGN</p>
+                </a>
+            </div>
+            <div class="col-4 border border border-5 border-danger">
+                <a
+                    href="https://rog.asus.com/articles/gaming-keyboards-gaming-mice/the-rog-falchion-rx-low-profile-is-a-slim-compact-keyboard-for-on-the-go-use/">
+                    <img src="https://dlcdnrog.asus.com/rog/media/1704420956731.webp" alt="">
+                    <p class="position-absolute text-light">THE ROG FALCHION RX LOW PROFILE IS A SLIM, COMPACT KEYBOARD
+                        FOR ON-THE-GO USE</p>
+                </a>
+            </div>
+            <div class="col-4 border border border-5 border-danger">
+                <a
+                    href="https://rog.asus.com/articles/rog-gaming-laptops/brilliant-visuals-meet-incredible-performance-on-2024-rog-strix-laptops/">
+                    <img src="https://dlcdnrog.asus.com/rog/media/1704423802417.webp" alt="">
+                    <p class="position-absolute text-light">BRILLIANT VISUALS MEET INCREDIBLE PERFORMANCE ON 2024 ROG
+                        STRIX LAPTOPS</p>
+                </a>
+            </div>
+        </div>
+        <!-- END RECENT STORIES -->
+
+        <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
