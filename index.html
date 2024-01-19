@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile</title>
+    <title>ROG - Republic of Gamers | Global | For Those Who Dare
+    </title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://rog.asus.com/rog/nuxtStatic/img/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,44 +22,224 @@
             font-family: 'Roboto Condensed', sans-serif;
             font-family: 'Space Grotesk', sans-serif;
         }
+
+        .text-decoration-custom {
+            position: relative;
+            display: inline-block;
+            color: red;
+            text-decoration: none;
+        }
+
+        .text-decoration-custom::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: red;
+            transition: width 0.3s ease;
+        }
+
+        .text-decoration-custom:hover::before {
+            width: 100%;
+        }
+
+        .color-hover {
+            transition: color 0.3s ease;
+            color: white;
+        }
+
+        .color-hover:hover {
+            color: red;
+        }
+
+        .border-hover {
+            position: relative;
+            display: inline-block;
+        }
+
+        .border-hover::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: red;
+            color: red;
+            transition: width 0.3s ease;
+        }
+
+        .border-hover:hover::before {
+            width: 100%;
+        }
+
+        .right-hover {
+            display: inline-block;
+            transition: transform 0.5s ease;
+        }
+
+        .right-hover:hover {
+            transform: translateX(5px);
+        }
+
+        .custom-col {
+            box-sizing: border-box;
+            width: 37.5%;
+            font-size: large;
+            position: absolute;
+        }
+
+        .img-products {
+            width: 175px;
+        }
+
+        .efek-stories {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .efek-stories a img {
+            transition: transform 0.3s ease;
+        }
+
+        .efek-stories a:hover img {
+            transform: scale(1.1);
+        }
+
+        .font-stories {
+            font-size: 16px;
+        }
+
+        .efek-action a p {
+            color: black;
+            transition: color 0.2s ease;
+        }
+
+        .efek-action a:hover p {
+            color: red;
+        }
+
+        .efek-products {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+        }
+
+        .efek-products:hover h6,
+        .efek-products:hover::before {
+            color: red;
+            width: 100%;
+        }
+
+        .efek-products::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: red;
+            transition: width 0.3s ease;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .custom-col {
+                width: 45%;
+            }
+
+            .font-stories {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .custom-col {
+                width: 50%;
+                font-size: small;
+            }
+
+            .custom-col h2 {
+                font-size: large;
+            }
+
+            .fs-hoam {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 864px) {
+            .img-products {
+                width: 125px;
+            }
+
+            .font-products {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .custom-col {
+                background: black;
+                width: 100%;
+                position: relative;
+                font-size: small;
+            }
+
+            .custom-col h2 {
+                font-size: large;
+            }
+        }
+
+        @media screen and (max-width: 625px) {
+            .img-products {
+                width: 90px;
+            }
+
+            .font-products {
+                font-size: 11px;
+            }
+        }
+
+        @media screen and (max-width: 442px) {
+            .img-products {
+                width: 70px;
+            }
+
+            .font-products {
+                font-size: 9px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+    <nav class="navbar bg-black navbar-expand-lg color" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="https://rog.asus.com/"><img src="rog-logo.png" alt=""
+                    class="col-lg-3 col-2"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link color-hover" href="#products">PRODUCTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link color-hover" href="#recent-stories">RECENT STORIES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link color-hover" href="#rog-in-action">ROG IN ACTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-hover" href="#rog-contacts">ROG CONTACTS</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -127,143 +310,143 @@
     <!-- END CARAUSEL -->
 
     <!-- PRODUCTS -->
-    <div class="container-fluid pt-5 pb-5">
+    <div class="container-fluid pt-5 pb-5" id="products">
         <h2 class="fw-bold text-center">EXPLORE OUR PRODUCTS</h2>
         <div id="carouselExample" class="carousel slide mt-5 mb-5">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-block w-100 d-flex justify-content-around">
                         <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/868C3307-DD02-4624-8BA7-31B62EE4A38F/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Laptops</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/motherboards-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/B9B3F542-45F3-4C59-9BC1-25B8A1B7CCB1/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Motherboards</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/graphics-cards-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/01480520-08BA-439E-A626-2E3D6F0D9908/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Graphics Card</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/monitors-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/718462E2-0FF1-424B-8070-9EE75A96DC64/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Monitors</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/phones-group/allmodels"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/A8895516-3C00-4DA2-97CA-04F258098672/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Phones</h6>
                         </a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 d-flex justify-content-around">
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/cooling-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/FB3145A7-F4C6-493F-BF30-3137E3DFD470/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Cooling</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/desktops-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/21EB1E78-1240-4559-9412-FEF17430103B/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Desktops</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/power-supply-units-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/DD0607BB-A52B-4947-81D4-6E90FFE609C1/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Power Supply Units</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/external-graphic-docks-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/976CF93D-8371-4C36-B44C-88920ED5FA9D/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">External Graphic Docks</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/networking-group/allmodels"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/8E7A4860-965C-424A-AC63-E228E0D0B391/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Networking</h6>
                         </a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 d-flex justify-content-around">
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/keyboards-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/FE102E9F-C72D-407F-A49B-2AB1006A0669/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Keyboards</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/mice-mouse-pads-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/F919198E-4F2B-4A8A-969A-E6E4757674AC/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Mice & Mouse Pads</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/headsets-audio-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/070A915A-ED63-4C9E-B837-F6F1766E2863/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Headsets & Audio</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/cases-group/allmodels"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/30D1F34B-0C37-4D9D-92E4-487372FD254F/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Cases</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/apparel-bags-gear-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/5AC10F2B-B36C-40D7-8950-78EE7F4E298E/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Apparel, Bags, & Gear</h6>
                         </a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-block w-100 d-flex justify-content-around">
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/streaming-kits-group/allmodels"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/7A8E0C01-7EBA-49FF-977E-352D6EAAA8BC/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Streaming Kits</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/controllers-group/allmodels"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/85A00D94-1EFE-424F-9C02-CE0EDBB646D1/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Controllers</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/storage-group/allmodels"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/D8D19FB9-2485-478F-9E58-4344265E0E69/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Storage</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/power-protection-gadgets-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/09D0ECE7-D85B-49F2-8432-8938293A39BB/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Power & Protection Gadgets</h6>
                         </a>
-                        <a href="https://rog.asus.com/laptops-group/"
-                            class="text-center text-decoration-none link-dark">
+                        <a href="https://rog.asus.com/gaming-handhelds-group/"
+                            class="text-center text-decoration-none efek-products">
                             <img src="https://dlcdnwebimgs.asus.com/gain/D0875F0F-7F79-4C4A-8B9D-AE292AD3B675/w240/h175"
-                                alt="" width="175px">
-                            <h6 class="mt-4">Laptops</h6>
+                                alt="" class="img-products">
+                            <h6 class="mt-4 font-products">Gaming Handhelds</h6>
                         </a>
                     </div>
                 </div>
@@ -281,102 +464,183 @@
     <!-- END PRODUCTS -->
 
     <!-- RECENT STORIES -->
-    <div class="container-fluid bg-dark pt-5 pb-5 align-items-center d-flex flex-column">
+    <div class="container-fluid bg-black pt-5 pb-5 align-items-center d-flex flex-column" id="recent-stories">
         <h2 class="fw-bold text-center mt-5 mb-5 text-light">RECENT STORIES</h2>
         <div class="container row mb-5">
             <div
-                class="col-4 border border-5 border-dark d-flex overflow-hidden position-relative justify-content-center">
+                class="col-lg-4 col-12 border border-5 border-black d-flex overflow-hidden position-relative justify-content-center efek-stories">
                 <a href="https://rog.asus.com/articles/product-news/everything-rog-announced-at-ces-2024/"
                     class="justify-content-center d-flex">
                     <img src="https://dlcdnrog.asus.com/rog/media/1704497743281.webp" alt="" width="600">
-                    <p class="position-absolute text-start text-light bottom-0 m-3">TRANSCEND LIMITS WITH ALL THE GAMING
+                    <p class="position-absolute text-start text-light bottom-0 m-3 font-stories">TRANSCEND LIMITS WITH
+                        ALL THE GAMING
                         GEAR ROG ANNOUNCED AT
                         CES 2024</p>
                 </a>
             </div>
             <div
-                class="col-4 border border-5 border-dark d-flex overflow-hidden position-relative justify-content-center">
+                class="col-lg-4 col-12 border border-5 border-black d-flex overflow-hidden position-relative justify-content-center efek-stories">
                 <a href="https://rog.asus.com/articles/rog-gaming-laptops/gorgeous-inside-and-out-meet-the-2024-zephyrus-g14-and-zephyrus-g16/"
                     class="justify-content-center d-flex">
                     <img src="https://dlcdnrog.asus.com/rog/media/1704422073607.webp" alt="" width="600">
-                    <p class="position-absolute text-start text-light bottom-0 m-3">GORGEOUS INSIDE AND OUT: MEET THE
+                    <p class="position-absolute text-start text-light bottom-0 m-3 font-stories">GORGEOUS INSIDE AND
+                        OUT: MEET THE
                         2024 ZEPHYRUS G14 AND
                         ZEPHYRUS G16</p>
                 </a>
             </div>
             <div
-                class="col-4 border border-5 border-dark d-flex overflow-hidden position-relative justify-content-center">
+                class="col-lg-4 col-12 border border-5 border-black d-flex overflow-hidden position-relative justify-content-center efek-stories">
                 <a href="https://rog.asus.com/articles/rog-gaming-laptops/gorgeous-inside-and-out-meet-the-2024-zephyrus-g14-and-zephyrus-g16/"
                     class="justify-content-center d-flex">
                     <img src="https://dlcdnrog.asus.com/rog/media/1704440763838.webp" alt="" width="600">
-                    <p class="position-absolute text-start text-light bottom-0 m-3">THE ROG PHONE 8 AND ROG PHONE 8 PRO
+                    <p class="position-absolute text-start text-light bottom-0 m-3 font-stories">THE ROG PHONE 8 AND ROG
+                        PHONE 8 PRO
                         BEYOND GAMING WITH A
                         SLIM NEW DESIGN</p>
                 </a>
             </div>
             <div
-                class="col-6 border border-5 border-dark d-flex overflow-hidden position-relative justify-content-center">
+                class="col-lg-6 col-12 border border-5 border-black d-flex overflow-hidden position-relative justify-content-center efek-stories">
                 <a href="https://rog.asus.com/articles/gaming-keyboards-gaming-mice/the-rog-falchion-rx-low-profile-is-a-slim-compact-keyboard-for-on-the-go-use/"
                     class="justify-content-center d-flex">
                     <img src="https://dlcdnrog.asus.com/rog/media/1704420956731.webp" alt="" width="600">
-                    <p class="position-absolute text-start text-light bottom-0 m-3">THE ROG FALCHION RX LOW PROFILE IS A
+                    <p class="position-absolute text-start text-light bottom-0 m-3 font-stories">THE ROG FALCHION RX LOW
+                        PROFILE IS A
                         SLIM, COMPACT KEYBOARD
                         FOR ON-THE-GO USE</p>
                 </a>
             </div>
             <div
-                class="col-6 border border-5 border-dark d-flex overflow-hidden position-relative justify-content-center">
+                class="col-lg-6 col-12 border border-5 border-black d-flex overflow-hidden position-relative justify-content-center efek-stories">
                 <a href="https://rog.asus.com/articles/rog-gaming-laptops/brilliant-visuals-meet-incredible-performance-on-2024-rog-strix-laptops/"
                     class="justify-content-center d-flex">
                     <img src="https://dlcdnrog.asus.com/rog/media/1704423802417.webp" alt="" width="600">
-                    <p class="position-absolute text-start text-light bottom-0 m-3">BRILLIANT VISUALS MEET INCREDIBLE
+                    <p class="position-absolute text-start text-light bottom-0 m-3 font-stories">BRILLIANT VISUALS MEET
+                        INCREDIBLE
                         PERFORMANCE ON 2024 ROG
                         STRIX LAPTOPS</p>
                 </a>
             </div>
         </div>
-        <a href="https://rog.asus.com/tag/product" class="text-decoration-none text-danger mb-3">LEARN MORE ></a>
+        <a href="https://rog.asus.com/tag/product"
+            class="text-decoration-none text-danger mb-3 border-hover right-hover">LEARN MORE
+            ></a>
     </div>
     <!-- END RECENT STORIES -->
 
     <!-- ROG ACTION -->
-    <div class="container-fluid pt-5 pb-5 align-items-center d-flex flex-column">
+    <div class="container-fluid pt-5 pb-5 align-items-center d-flex flex-column" id="rog-in-action">
         <h2 class="fw-bold text-center mt-5 mb-5">ROG IN ACTION</h2>
         <div class="container row justify-content-between mb-3">
-            <div class="col-4 d-flex overflow-hidden position-relative justify-content-center">
-                <a href="" class="text-decoration-none">
+            <div class="col-md-4 col-12 d-flex overflow-hidden position-relative justify-content-center efek-action">
+                <a href="https://rog.asus.com/articles/gaming/the-best-relaxing-casual-games-to-play-on-the-rog-ally/"
+                    class="text-decoration-none">
                     <img src="https://dlcdnrog.asus.com/rog/media/1701315929488.webp" alt="" class="img-fluid">
                     <h6 class="text-danger m-2">GAMING</h6>
-                    <p class="text-dark text-start m-2">THE BEST RELAXING, CASUAL GAMES TO PLAY ON THE ROG ALLY</p>
+                    <p class="text-start m-2 fs-hoam">THE BEST RELAXING, CASUAL GAMES TO PLAY ON THE ROG ALLY
+                    </p>
                 </a>
             </div>
-            <div class="col-4 d-flex overflow-hidden position-relative justify-content-center">
-                <a href="" class="text-decoration-none">
+            <div class="col-md-4 col-12 d-flex overflow-hidden position-relative justify-content-center efek-action">
+                <a href="https://rog.asus.com/articles/gaming/the-best-rog-ally-games-to-play-in-short-bursts/"
+                    class="text-decoration-none">
                     <img src="https://dlcdnrog.asus.com/rog/media/1694831256194.webp" alt="" class="img-fluid">
                     <h6 class="text-danger m-2">GAMING</h6>
-                    <p class="text-dark text-start m-2">THE BEST ROG ALLY GAMES TO PLAY IN SHORT BURSTS</p>
+                    <p class="text-start m-2 fs-hoam">THE BEST ROG ALLY GAMES TO PLAY IN SHORT BURSTS</p>
                 </a>
             </div>
-            <div class="col-4 d-flex overflow-hidden position-relative justify-content-center">
-                <a href="" class="text-decoration-none">
+            <div class="col-md-4 col-12 d-flex overflow-hidden position-relative justify-content-center efek-action">
+                <a href="https://rog.asus.com/articles/gaming/rog-and-opera-join-forces-for-a-special-edition-of-opera-gx-the-browser-for-gamers/"
+                    class="text-decoration-none">
                     <img src="https://dlcdnrog.asus.com/rog/media/1692405432501.webp" alt="" class="img-fluid">
                     <h6 class="text-danger m-2">GAMING</h6>
-                    <p class="text-dark text-start m-2">ROG AND OPERA JOIN FORCES FOR A SPECIAL EDITION OF OPERA GX, THE BROWSER FOR GAMERS</p>
+                    <p class="text-start m-2 fs-hoam">ROG AND OPERA JOIN FORCES FOR A SPECIAL EDITION OF
+                        OPERA GX,
+                        THE
+                        BROWSER FOR GAMERS</p>
                 </a>
             </div>
         </div>
-        <a href="https://rog.asus.com/tag/product" class="text-decoration-none text-danger mb-3">LEARN MORE ></a>
+        <a href="https://rog.asus.com/tag/product"
+            class="text-decoration-none text-danger mb-3 border-hover right-hover">LEARN MORE
+            ></a>
     </div>
     <!-- END ROG ACTION -->
 
     <!-- BEFORE FOOTER -->
-    <div class="container-fluid p-0">
-        <img src="https://dlcdnwebimgs.asus.com/gain/FDFFE426-0A29-40D5-8E26-C838EB26CA8F" alt="" class="img-fluid">
-        <div>
-            <h2></h2>
+    <div class="container-fluid p-0 d-md-flex justify-content-md-end justify-content-center align-items-md-center"
+        id="rog-contacts">
+        <div class="text-light d-flex flex-column custom-col">
+            <h2 class="fw-bold text-center text-md-start pt-5">THE ART OF THE ROG UNIVERSE</h2>
+            <p class="m-md-0 m-2">Technology never sleeps, nor should the action. For those keen on winning power, the
+                Republic of Gamers
+                awaits. Driven by relentless innovation, ROG is committed to producing out-of-this-world experiences for
+                gamers and enthusiasts everywhere.</p>
         </div>
+        <img src="https://dlcdnwebimgs.asus.com/gain/FDFFE426-0A29-40D5-8E26-C838EB26CA8F" alt="" class="img-fluid">
     </div>
     <!-- END BEFORE FOOTER -->
+
+    <!-- FOOTER -->
+    <div class="container-fluid bg-black">
+        <footer class="pt-5">
+            <div class="justify-content-between d-flex border-bottom border-1 border-light flex-column flex-md-row">
+                <ul class="nav flex-column flex-md-row">
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link px-4 color-hover text-decoration-custom" style="font-size: 14px;">
+                            ABOUTROG
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link px-4 color-hover text-decoration-custom" style="font-size: 14px;">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link px-4 color-hover text-decoration-custom" style="font-size: 14px;">
+                            NEWSROOM
+                        </a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="#" class="nav-link px-4 color-hover text-decoration-custom"
+                            style="font-size: 14px;">ACCESSIBILIY HELP
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="" class="nav-link px-lg-3 px-2 color-hover fs-5"><i
+                                class='bx bxl-facebook'></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-lg-3 px-2 color-hover fs-5"><i
+                                class='bx bxl-twitter'></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-lg-3 px-2 color-hover fs-5"><i
+                                class='bx bxl-discord'></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-lg-3 px-2 color-hover fs-5"><i
+                                class='bx bxl-youtube'></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-lg-3 px-2 color-hover fs-5"><i
+                                class='bx bxl-twitch'></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-lg-3 px-2 color-hover fs-5"><i
+                                class='bx bxl-instagram'></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link px-lg-3 px-2 color-hover fs-5"><i
+                                class='bx bxl-tiktok'></i></a></li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-md-end pt-4 pb-3">
+                <ul class="nav flex-column flex-md-row">
+                    <li class="px-2 my-md-0 my-3" style="font-size: 12px;"><a href=""
+                            class="text-decoration-none color-hover">PRIVACY
+                            POLICE</a></li>
+                    <li class="px-2 my-md-0 my-3" style="font-size: 12px;"><a href=""
+                            class="text-decoration-none color-hover">TERMS
+                            OF USE NOTICE</a></li>
+                    <li class="text-light px-2 my-md-0 my-3" style="font-size: 12px;">&copy;ASUSTEK COMPUTER INC. ALL
+                        RIGHTS
+                        RESERVED.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- END FOOTER -->
 
     <script src="js/bootstrap.bundle.js"></script>
 </body>
